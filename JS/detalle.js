@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function loadProductDetails(product) {
     // Mostrar información básica del producto
-    document.getElementById("productImage").src = product.pictures?.[0]?.secure_url || "../imagenes/placeholder-producto.jpg";
+    document.getElementById("productImage").src = product.pictures?.[0]?.secure_url || "./imagenes/placeholder-producto.jpg";
     document.getElementById("productTitle").textContent = product.title || "Producto no disponible";
     document.getElementById("productPrice").textContent = `Precio: $${product.price.toFixed(2)}`;
     document.getElementById("productDescription").textContent = product.description?.plain_text || "Descripción no disponible.";
@@ -42,7 +42,7 @@ function addToCart(product) {
             id: product.id,
             title: product.title,
             price: product.price,
-            image: product.pictures?.[0]?.secure_url || "../imagenes/placeholder-producto.jpg",
+            image: product.pictures?.[0]?.secure_url || "./imagenes/placeholder-producto.jpg",
             quantity: 1,
         });
     }
@@ -119,7 +119,7 @@ function closeCartSidebar() {
 // Configurar eventos
 document.getElementById("closeCart").addEventListener("click", closeCartSidebar);
 document.getElementById("checkout").addEventListener("click", () => {
-    window.location.href = "../formulario.html";
+    window.location.href = "./formulario.html";
 });
 
 // Inicialización

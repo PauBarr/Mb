@@ -134,7 +134,7 @@ function finalizePurchase() {
 
     // Guardar resumen del carrito para mostrar en el formulario
     localStorage.setItem("purchaseSummary", JSON.stringify(cartItems));
-    window.location.href = "../formulario.html";
+    window.location.href = "./formulario.html";
 }
 
 // Configuración inicial
