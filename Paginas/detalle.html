@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del Producto</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/7c3b6be1f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbarContainer"></div>
+
+    <!-- Detalle del Producto -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Imagen del producto -->
+          <div class="col-md-6">
+            <img
+              id="productImage"
+              src="../imagenes/placeholder-producto.jpg"
+              class="img-fluid rounded shadow"
+              alt="Producto"
+            />
+          </div>
+          <!-- Información del producto -->
+          <div class="col-md-6">
+            <h1 id="productTitle" class="font-weight-bold">
+              Nombre del Producto
+            </h1>
+            <h3 id="productPrice" class="text-success font-weight-bold">
+              Precio: $0.00
+            </h3>
+            <p id="productDescription" class="text-muted">
+              Descripción no disponible.
+            </p>
+            <button id="addToCart" class="btn btn-warning btn-lg mt-3">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Barra lateral del carrito -->
+    <div id="cartSidebar" class="cart-sidebar">
+      <div
+        class="cart-header d-flex justify-content-between align-items-center"
+      >
+        <h4 class="font-weight-bold mb-0">Carrito</h4>
+        <button id="closeCart" class="close-cart btn btn-sm btn-danger">
+          &times;
+        </button>
+      </div>
+      <div id="cartItemsContainer" class="mt-4">
+        <!-- Productos dinámicos -->
+      </div>
+      <div class="cart-footer text-center mt-4">
+        <p class="font-weight-bold">Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkout" class="btn btn-success btn-block mt-3">
+          Finalizar Compra
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/detalle.js" defer></script>
+    <script src="../JS/loadComponents.js"></script>
+  </body>
+</html>

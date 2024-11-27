@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB2 - Bienvenidos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/7c3b6be1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbarContainer"></div>
+    
+    
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-dark">
+        <div class="container py-5">
+            <h1 class="display-4 font-weight-bold">Todo para darte un gusto</h1>
+            <p class="lead text-muted">Chocolates, alfajores y dulces irresistibles, todo en un solo lugar.</p>
+            <a href="Paginas/catalogo.html" class="btn btn-warning btn-lg mt-3 shadow-lg">Explorar catálogo</a>
+        </div>
+    </header>
+
+    <!-- Productos Destacados -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Productos Destacados</h2>
+            <p class="text-center text-muted mb-5">Explora una selección especial de nuestros productos más populares.</p>
+            <div id="productosDestacadosRow" class="row">
+                <!-- Los productos se cargan dinámicamente desde el archivo productosDestacados.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Explora nuestras categorías</h2>
+            <p class="text-center text-muted mb-5">Encuentra lo que más te gusta y disfruta de la mejor calidad.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card category-card shadow-sm">
+                        <img src="./imagenes/chocolates.webp" class="card-img-top img-fluid" alt="Chocolates">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-dark">Chocolates</h5>
+                            <a href="Paginas/catalogo.html?category=chocolates" class="btn btn-outline-warning btn-block shadow-sm">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card category-card shadow-sm">
+                        <img src="./imagenes/alfajores.webp" class="card-img-top img-fluid" alt="Alfajores">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-dark">Alfajores</h5>
+                            <a href="Paginas/catalogo.html?category=alfajores" class="btn btn-outline-warning btn-block shadow-sm">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card category-card shadow-sm">
+                        <img src="./imagenes/dulces.webp" class="card-img-top img-fluid" alt="Dulces">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-dark">Dulces</h5>
+                            <a href="Paginas/catalogo.html?category=dulces" class="btn btn-outline-warning btn-block shadow-sm">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./JS/productosDestacados.js" defer></script>
+    <script src="../JS/loadComponents.js"></script>
+</body>
+</html>

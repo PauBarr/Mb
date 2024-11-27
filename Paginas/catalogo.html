@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/7c3b6be1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbarContainer"></div>
+
+    <!-- Filtros -->
+    <section class="py-3 bg-warning text-dark">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Catálogo de Productos</h2>
+            <form id="filterForm" class="form-inline justify-content-center mt-4">
+                <div class="form-group mx-2">
+                    <label for="category" class="mr-2">Categoría:</label>
+                    <select class="form-control" id="category">
+                        <option value="">Todas</option>
+                        <option value="chocolates">Chocolates</option>
+                        <option value="alfajores">Alfajores</option>
+                        <option value="dulces">Dulces</option>
+                    </select>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="minPrice" class="mr-2">Precio mínimo:</label>
+                    <input type="number" class="form-control" id="minPrice" placeholder="0">
+                </div>
+                <div class="form-group mx-2">
+                    <label for="maxPrice" class="mr-2">Precio máximo:</label>
+                    <input type="number" class="form-control" id="maxPrice" placeholder="1000">
+                </div>
+                <button type="submit" class="btn btn-dark ml-2">Aplicar Filtros</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="py-5">
+        <div class="container">
+            <div id="productList" class="row">
+                <!-- Productos dinámicos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/catalog.js" defer></script>
+    <script src="../JS/loadComponents.js"></script>
+</body>
+</html>

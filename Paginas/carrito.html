@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <!-- Biblioteca Font Awesome -->
+    <script src="https://kit.fontawesome.com/7c3b6be1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbarContainer"></div>
+
+    <!-- Carrito de Compras -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 font-weight-bold ">Carrito de Compras</h2>
+            <!-- Contenedor de productos -->
+            <div id="cart-items" class="row">
+                <!-- Se cargan productos dinámicos -->
+                <div class="col-12 text-center">
+                    <p id="empty-cart-message" class="text-muted font-italic">Tu carrito está vacío. ¡Agrega productos para empezar!</p>
+                </div>
+            </div>
+
+            <!-- Resumen del carrito -->
+            <div class="summary-container mt-5 p-4 shadow rounded bg-white">
+                <h4 class="text-right font-weight-bold text-secondary">Resumen de Compra</h4>
+                <p class="text-right">
+                    <strong>Total:</strong> $<span id="total-price" class="text-success">0.00</span>
+                </p>
+                <div class="d-flex justify-content-end">
+                    <button id="clear-cart" class="btn btn-outline-danger mr-2">
+                        <i class="fas fa-trash-alt"></i> Vaciar Carrito
+                    </button>
+                    <button id="buy-now" class="btn btn-success">
+                        <i class="fas fa-check"></i> Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/cart.js" defer></script>
+    <script src="../JS/loadComponents.js" defer></script>
+</body>
+</html>
