@@ -60,6 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         alert("¡Compra realizada con éxito!");
         localStorage.removeItem("cartItems");
-        window.location.href = "../index.html";
+        window.location.href = "./index.html";
     });
 });
