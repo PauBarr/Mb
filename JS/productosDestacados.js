@@ -84,7 +84,7 @@ async function displayHighlightedProducts() {
         cardText.textContent = `Precio: $${product.price ? product.price.toFixed(2) : "No disponible"}`;
 
         const link = document.createElement("a");
-        link.href = `Paginas/detalle.html?id=${product.id}`;
+        link.href = `detalle.html?id=${product.id}`;
         link.classList.add("btn", "btn-primary", "btn-block");
         link.textContent = "Ver más";
 

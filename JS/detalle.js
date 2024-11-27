@@ -119,7 +119,7 @@ function closeCartSidebar() {
 // Configurar eventos
 document.getElementById("closeCart").addEventListener("click", closeCartSidebar);
 document.getElementById("checkout").addEventListener("click", () => {
-    window.location.href = "../Paginas/formulario.html";
+    window.location.href = "../formulario.html";
 });
 
 // Inicialización
